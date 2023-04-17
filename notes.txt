@@ -19,7 +19,7 @@ I was thinking we would use:
 #F5F5F5 (Light-Grey, almost white)
 #FFFD77 (Washed-out yellow)
 #429EB3 (Teal)
-#800000 (Maroon)
+#ED1C24 (Red)
 #220F2E (Dark-Purple, almost black)
 
 EVERYBODY NEEDS TO MAKE A PORTFOLIO PAGE
