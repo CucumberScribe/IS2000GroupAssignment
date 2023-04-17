@@ -22,6 +22,8 @@ I was thinking we would use:
 #800000 (Maroon)
 #220F2E (Dark-Purple, almost black)
 
-Aramis Hahne: My git is configured. (Home and Care policy, favicon, and icon)
-Michael Hoff: I believe my git is configured. I guess I'll find out in class. (Adoptions, Donations, About)
-JP will be doing (contact us, and stories)
+EVERYBODY NEEDS TO MAKE A PORTFOLIO PAGE
+Aramis Hahne: My git is configured. (Care policy, and contact us (Embedded Map), and ) (Home: favicon and icon, help with main)
+Michael Hoff: I believe my git is configured. I guess I'll find out in class. (Donations, About) (Home: Navbar)
+PJ will be doing (stories) (Home: help with main)
+Andrew Webster: (Adoptions (bootstrap)) (Home: Footer)
