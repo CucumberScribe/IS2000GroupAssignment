@@ -56,6 +56,29 @@ header a:hover, a:visited {
 
 main {
    min-height: 300px;
+   background-color: #F5F5F5;
+}
+
+.tablet-desktop {
+   display: none;
+}
+
+.grid {
+   display: grid;
+   grid-template-columns: auto auto auto;
+   grid-gap: 20px;
+}
+
+.grid-item1 {
+   grid-column: 1 / span 2;
+   text-align: center;
+   font-family: 'Cabin', sans-serif;
+   font-size: 1.2em;
+   background-color: #FFFD77;
+   padding: 3%;
+   box-shadow: 5px 5px 8px #000;
+   box-sizing: border-box;
+   border-radius: 0 1px;
 }
 
 
@@ -127,8 +150,16 @@ footer {
       max-height: 150px;
    }
 
+   .mobile {
+      display: none;
+   }
+
+   .tablet-desktop {
+      display: block;
+   }
+
    footer {
-      position: fixed;
+      position: static;
       left: 0;
       bottom: 0;
       width: 100%;
