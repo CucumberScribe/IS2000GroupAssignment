@@ -2,6 +2,7 @@
     Contributors:
     Aramis Hahne
     Andrew Webster
+    Michael Hoff
     And probably everyone else.
  */
 
@@ -21,6 +22,10 @@ footer {
 /* Header Stylings */
 .tablet-desktop-header {
    display: none;
+}
+
+.nav-bg{
+   background: #220F2E;   
 }
 
 header {
@@ -84,6 +89,10 @@ footer {
    grid-template-rows: repeat(2, 1fr);
    grid-gap: 5px;
    padding-right: 40px;
+}
+
+.nav-bg{
+   background: #220F2E;   
 }
 
 .list-inline li {
