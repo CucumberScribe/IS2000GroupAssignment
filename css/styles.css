@@ -1,22 +1,27 @@
 /*
     Contributors:
     Aramis Hahne
+    Andrew Webster
     And probably everyone else.
  */
 
- /* CSS Reset */
- body, header, nav, main, footer {
-    margin: 0;
-    padding: 0;
-    border: 0;
- }
+/* CSS Reset */
+body,
+header,
+nav,
+main,
+footer {
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
 
- header img {
-    max-height: 150px;
- }
+header img {
+   max-height: 150px;
+}
 
- @media screen and (min-width: 630px) {
-    header img {
-        max-height: 250px;
-    }
- }
+@media screen and (min-width: 630px) {
+   header img {
+      max-height: 250px;
+   }
+}
