@@ -16,18 +16,21 @@ footer {
    border: 0;
 }
 
-nav img {
-   max-height: 150px;
-}
-
-@media screen and (min-width: 630px) {
-   header img {
-      max-height: 250px;
-   }
+header img {
+   max-height: 80px;
 }
 
 /* Styles for desktop viewport only */
 @media (min-width: 768px) {
+   
+   header img {
+      max-height: 250px;
+   }
+
+   header h1 {
+      float: right;
+   }
+
    footer {
       position: fixed;
       left: 0;
