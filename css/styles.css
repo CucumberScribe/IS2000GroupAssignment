@@ -11,7 +11,10 @@ body,
 header,
 nav,
 main,
-footer {
+footer,
+h1,
+div,
+img {
    margin: 0;
    padding: 0;
    border: 0;
@@ -67,14 +70,13 @@ main {
    display: grid;
    grid-template-columns: auto auto auto;
    grid-gap: 20px;
-   width: 100%;
 }
 
-.grid-item1 {
-   grid-column: 1 / span 2;
+.grid:nth-child(even) {
+   background-color: #AAAAAA;
 }
 
-.grid-box {
+.content-box {
    text-align: center;
    font-family: 'Cabin', sans-serif;
    font-size: 1.2em;
@@ -82,26 +84,57 @@ main {
    box-shadow: 5px 5px 8px #000;
    box-sizing: border-box;
    border-radius: 0 1px;
-   margin: 2%;
+   margin: 4%;
 }
 
-#mission-statement {
+.content-box img {
+   max-height: 100%;
+   max-width: 100%;
+   object-fit: contain;
+}
+
+.content-box a {
+   color: black;
+}
+
+.bg-yellow {
    background-color: #FFFD77;
+   color: black;
+}
+
+.bg-lavender {
+   background-color: #CBC3E3;
+   color: black;
+}
+
+.bg-red {
+   background-color: #ED1C24;
+   color: black;
 }
 
 #about-team {
-   background-color: #CBC3E3;
+   text-align: center;
 }
 
-#index-misc {
-   background-color: #ED1C24;
-   margin: 2%;
-   width: 100%;
+#about-team img {
+   max-height: 128px;
+   max-width: 128px;
+}
+
+#about-team ul {
+   display: inline-flex;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+#about-team li {
+   margin: auto 20px;
 }
 
 /* Styling for footer */
 footer {
-   position: fixed;
+   position: static;
    left: 0;
    bottom: 0;
    width: 100%;
@@ -149,7 +182,7 @@ footer {
 
 /* Styles for tablet viewport only */
 @media (min-width: 768px) {
-   
+
    .mobile-header {
       display: none;
    }
@@ -157,6 +190,10 @@ footer {
    .tablet-desktop-header {
       display: block;
       margin: auto;
+   }
+
+   .desktop {
+      display: none;
    }
 
    header {
@@ -214,6 +251,14 @@ footer {
 }
 
 /* Styles for Desktop viewport only */
-@media (min-width: 960px) {
+@media (min-width: 1200px) {
    
+   .desktop {
+      display: block;
+   }
+
+   .tablet {
+      display: none;
+   }
+
 }
