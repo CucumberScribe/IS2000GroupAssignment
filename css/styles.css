@@ -67,20 +67,37 @@ main {
    display: grid;
    grid-template-columns: auto auto auto;
    grid-gap: 20px;
+   width: 100%;
 }
 
 .grid-item1 {
    grid-column: 1 / span 2;
+}
+
+.grid-box {
    text-align: center;
    font-family: 'Cabin', sans-serif;
    font-size: 1.2em;
-   background-color: #FFFD77;
    padding: 3%;
    box-shadow: 5px 5px 8px #000;
    box-sizing: border-box;
    border-radius: 0 1px;
+   margin: 2%;
 }
 
+#mission-statement {
+   background-color: #FFFD77;
+}
+
+#about-team {
+   background-color: #CBC3E3;
+}
+
+#index-misc {
+   background-color: #ED1C24;
+   margin: 2%;
+   width: 100%;
+}
 
 /* Styling for footer */
 footer {
