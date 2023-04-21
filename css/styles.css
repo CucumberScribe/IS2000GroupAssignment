@@ -158,6 +158,18 @@ aside {
    margin: auto 20px;
 }
 
+#index-basic-info {
+   display: block;
+   padding: 2%;
+   margin: 2% 10%;
+   width: 80%;
+   background-color: #eeeeee;
+   text-align: center;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-weight: bold;
+
+}
+
 .frame {
 	position: relative;
 	max-width: 450px;
