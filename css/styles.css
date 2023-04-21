@@ -14,7 +14,8 @@ main,
 footer,
 h1,
 div,
-img {
+img,
+figure {
    margin: 0;
    padding: 0;
    border: 0;
@@ -132,6 +133,8 @@ aside {
 #about-team img {
    max-height: 128px;
    max-width: 128px;
+   border: 3px solid #220F2E;
+   margin: 5px auto;
 }
 
 #about-team ul {
@@ -143,6 +146,30 @@ aside {
 
 #about-team li {
    margin: auto 20px;
+}
+
+.frame {
+	position: relative;
+	max-width: 450px;
+	margin: 2% auto;
+   border: 5px solid #220F2E;
+}
+
+.frame:hover {
+   transform: scale(1.25);
+}
+
+.pic-text {
+	position: absolute;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+   font-size: 1.2em;
+	font-family: Verdana, Arial, sans-serif;
+	font-weight: bold;
 }
 
 /* Styling for footer */
