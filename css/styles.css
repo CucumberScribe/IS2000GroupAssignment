@@ -63,6 +63,16 @@ main {
    background-color: #F5F5F5;
 }
 
+.top-image {
+   position: relative;
+   width: 100%;
+   overflow: hidden;
+}
+
+.top-image img {
+   object-fit: contain;
+}
+
 .tablet-desktop {
    display: none;
 }
