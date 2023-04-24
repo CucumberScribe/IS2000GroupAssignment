@@ -26,14 +26,3 @@ showLessButtons.forEach(function(button) {
   });
 });
 
-var video = document.getElementById("myVideo");
-
-    function togglePlayPause() {
-      if (video.paused) {
-        video.play();
-      } else {
-        video.pause();
-      }
-    }
-
-    video.addEventListener("click", togglePlayPause);
