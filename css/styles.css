@@ -209,6 +209,8 @@ aside {
 .map {
    margin: 2%;
    border: solid 2px #220F2E;
+   max-height: 100%;
+   max-width: 100%;
 }
 
 .tablet-desktop-header {
