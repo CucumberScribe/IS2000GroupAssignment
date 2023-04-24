@@ -204,6 +204,7 @@ footer {
 .pet-story {
    display: flex;
    margin-bottom: 20px;
+   background-color: #FFFD77;
  }
  .adopt-btn {
    display: inline-block;
@@ -223,10 +224,12 @@ footer {
  
    .pet-story {
      flex-direction: column;
+     background-color: #FFFD77;
    }
  
  
    .story-details {
      margin-bottom: 20px;
+     background-color: #FFFD77;
    }
 }
