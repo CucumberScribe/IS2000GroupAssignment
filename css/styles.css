@@ -24,9 +24,6 @@ figure {
 /* Mobile viewport (mobile-first) */
 
 /* Header Stylings */
-.tablet-desktop-header {
-   display: none;
-}
 
 .nav-bg{
    background: #220F2E;   
@@ -71,10 +68,6 @@ main {
 
 .top-image img {
    object-fit: contain;
-}
-
-.tablet-desktop {
-   display: none;
 }
 
 .grid {
@@ -194,6 +187,37 @@ aside {
 	font-weight: bold;
 }
 
+.contact-us {
+   display: block;
+   text-align: center;
+   background: #CBC3E3;
+   padding: 2%;
+}
+
+.map-section {
+   padding: 4%;
+   border: solid 4px #220F2E;
+   text-align: center;
+}
+
+.map-section h2 {
+   font-family: 'Kalam', cursive;
+   font-weight: bold;
+}
+
+.map {
+   margin: 2%;
+   border: solid 2px #220F2E;
+}
+
+.tablet-desktop-header {
+   display: none;
+}
+
+.tablet-desktop {
+   display: none;
+}
+
 /* Styling for footer */
 footer {
    position: static;
@@ -249,33 +273,12 @@ footer a {
 /* Styles for tablet viewport only */
 @media (min-width: 768px) {
 
-   .mobile-header {
-      display: none;
-   }
-
-   .tablet-desktop-header {
-      display: block;
-      margin: auto;
-   }
-
-   .desktop {
-      display: none;
-   }
-
    header {
       text-align: left;
    }
 
    header img {
       max-height: 150px;
-   }
-
-   .mobile {
-      display: none;
-   }
-
-   .tablet-desktop {
-      display: block;
    }
 
    footer {
@@ -314,11 +317,67 @@ footer a {
    .list-inline li:hover {
       transform: scale(1.4);
    }
+
+   .contact-img {
+      text-align: center;
+   }
+
+   .contact-img img {
+      text-align: center;
+      margin: 2%;
+   }
+
+   .contact-info {
+      display: block;
+      text-align: center;
+      padding: 2%;
+   }
+
+   .mobile {
+      display: none;
+   }
+
+   .tablet-desktop {
+      display: block;
+   }
+
+   .mobile-header {
+      display: none;
+   }
+
+   .tablet-desktop-header {
+      display: block;
+      margin: auto;
+   }
+
+   .desktop {
+      display: none;
+   }
+
 }
 
 /* Styles for Desktop viewport only */
 @media (min-width: 1200px) {
-   
+
+   .contact-img {
+      width: 50%;
+   }
+
+   .contact-img img {
+      max-width: 100%;
+      max-height: 100%;
+   }
+
+   .contact-us {
+      display: flex;
+   }
+
+   .contact-info {
+      text-align: left;
+      padding-left: 2%;
+      width: 48%;
+   }
+
    .desktop {
       display: block;
    }

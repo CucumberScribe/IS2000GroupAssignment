@@ -60,7 +60,7 @@ Use comments that explain what each section does
 Each page should include proper text headings and typographical hierarchy (i.e. font family and the words should look good)
 Pull in one font family and use it on your page
 Include at least 1 unique image on each of the pages with appropriate wrapping
-(✓) (This should be complete as long as you use the template) A standard navigation bar on one line AND include a hamburger option for small devices
+(✓) (Use the template) A standard navigation bar on one line AND include a hamburger option for small devices
 At the bottom of each page, name of team member that worked on that page, and a link to their portfolio page
 Common CSS styling on each page linked via an external style sheet file, pages should NOT be identical but should have the same look
 Include a background color consistent with look and feel of site or company color
