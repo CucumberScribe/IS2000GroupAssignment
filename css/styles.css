@@ -21,6 +21,10 @@ footer {
 /* Mobile viewport (mobile-first) */
 
 /* Header Stylings */
+.hidden-paragraph {
+   display: none;
+}
+
 .tablet-desktop-header {
    display: none;
 }
@@ -238,3 +242,4 @@ footer {
      background-color: #FFFD77;
    }
 }
+
