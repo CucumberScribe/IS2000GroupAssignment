@@ -221,6 +221,34 @@ aside {
    display: none;
 }
 
+/* Styling for Adpotions Page in mobile*/
+.container-fluid {
+   display: none;
+}
+
+.adoptionListItem h5,
+h3 {
+   text-align: center;
+   font-weight: bold;
+}
+
+.adoptionListItem p {
+   padding-left: 10px;
+}
+
+.container-fluid h3,
+h5 {
+   text-align: center;
+   font-family: 'Cabin', sans-serif;
+   font-weight: bold;
+   font-size: 4em;
+}
+
+.staticPetList img {
+   border: 5px solid #555;
+   border-radius: 25px;
+}
+
 /* Styling for footer */
 footer {
    position: static;
@@ -358,6 +386,44 @@ footer a {
       display: none;
    }
 
+   /* Style Rules for Adoptions Page in desktop*/
+   #carouselSidebar {
+      margin: 0 auto;
+      /* centers the carousel */
+      width: 50%;
+      /* adjust as needed */
+   }
+
+   .container-fluid {
+      display: block;
+   }
+
+   .staticPetList {
+      display: none;
+   }
+
+   .carousel-caption {
+      position: absolute;
+      top: 0;
+      width: 33.33%;
+      background-color: rgba(0, 0, 0, 0.5);
+      /* add a semi-transparent background */
+      color: #fff;
+      /* set the text color to white */
+      padding: 1.25rem;
+      text-align: left;
+      transform: translateX(450px);
+   }
+
+   .carousel-caption ul {
+      text-align: left;
+   }
+
+   .container-fluid img {
+      border: 5px solid #555;
+      border-radius: 25px;
+   }
+
 }
 
 /* Styles for Desktop viewport only */
@@ -390,28 +456,4 @@ footer a {
       display: none;
    }
 
-}
-
-#carouselSidebar {
-   margin: 0 auto;
-   /* centers the carousel */
-   width: 50%;
-   /* adjust as needed */
-}
-
-.carousel-caption {
-   position: absolute;
-   top: 0;
-   width: 33.33%;
-   background-color: rgba(0, 0, 0, 0.5);
-   /* add a semi-transparent background */
-   color: #fff;
-   /* set the text color to white */
-   padding: 1.25rem;
-   text-align: left;
-   transform: translateX(450px);
-}
-
-.carousel-caption ul {
-   text-align: left;
 }
