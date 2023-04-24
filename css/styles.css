@@ -217,13 +217,14 @@ aside {
    max-width: 100%;
 }
 
-.tablet-desktop-header {
+.pet-story {
+   font-size: 1.3em;
+}
+
+#dingo p, #louis p, #daisy p {
    display: none;
 }
 
-.tablet-desktop {
-   display: none;
-}
 
 /* Styling for Adpotions Page in mobile*/
 .container-fluid {
@@ -305,6 +306,18 @@ footer a {
 }
 
 /* End of styling for footer /*
+
+/* Show and hide for media queries */
+/* DO NOT PUT ANYTHING BELOW THIS LINE PLS (that isn't inside the media query obvs) :) */
+
+.tablet-desktop-header {
+   display: none;
+}
+
+.tablet-desktop {
+   display: none;
+}
+
 
 /* Styles for tablet viewport only */
 @media (min-width: 768px) {
