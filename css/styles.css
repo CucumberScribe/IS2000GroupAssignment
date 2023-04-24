@@ -201,3 +201,32 @@ footer {
 @media (min-width: 960px) {
    
 }
+.pet-story {
+   display: flex;
+   margin-bottom: 20px;
+ }
+ .adopt-btn {
+   display: inline-block;
+   background-color: #008080;
+   color: #fff;
+   padding: 10px 20px;
+   text-decoration: none;
+   font-weight: bold;
+   border-radius: 4px;
+ }
+ 
+ .adopt-btn:hover {
+   background-color: #006666;
+ }
+ @media screen and (max-width: 768px) {
+   
+ 
+   .pet-story {
+     flex-direction: column;
+   }
+ 
+ 
+   .story-details {
+     margin-bottom: 20px;
+   }
+}
