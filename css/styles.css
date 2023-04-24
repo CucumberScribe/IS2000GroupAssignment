@@ -206,6 +206,11 @@ footer {
    margin-bottom: 20px;
    background-color: #FFFD77;
  }
+ .pet-story img{
+   max-height: 600px;
+   max-width: 600px;
+   margin: 3%;
+ }
  .adopt-btn {
    display: inline-block;
    background-color: #008080;
