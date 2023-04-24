@@ -25,3 +25,15 @@ showLessButtons.forEach(function(button) {
     this.parentElement.querySelector('.show-more').style.display = 'block';
   });
 });
+
+var video = document.getElementById("myVideo");
+
+    function togglePlayPause() {
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    }
+
+    video.addEventListener("click", togglePlayPause);
