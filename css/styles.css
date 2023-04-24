@@ -12,7 +12,11 @@ body,
 header,
 nav,
 main,
-footer {
+footer,
+h1,
+div,
+img,
+figure {
    margin: 0;
    padding: 0;
    border: 0;
@@ -21,16 +25,12 @@ footer {
 /* Mobile viewport (mobile-first) */
 
 /* Header Stylings */
-.hidden-paragraph {
-   display: none;
-}
-
 .tablet-desktop-header {
    display: none;
 }
 
-.nav-bg{
-   background: #220F2E;   
+.nav-bg {
+   background: #220F2E;
 }
 
 header {
@@ -55,7 +55,8 @@ header img {
    margin: auto 20px;
 }
 
-header a:hover, a:visited {
+header a:hover,
+a:visited {
    text-decoration: none;
 }
 
@@ -64,8 +65,14 @@ main {
    background-color: #F5F5F5;
 }
 
-.tablet-desktop {
-   display: none;
+.top-image {
+   position: relative;
+   width: 100%;
+   overflow: hidden;
+}
+
+.top-image img {
+   object-fit: contain;
 }
 
 .grid {
@@ -74,29 +81,192 @@ main {
    grid-gap: 20px;
 }
 
-.grid-item1 {
-   grid-column: 1 / span 2;
+.grid:nth-child(even) {
+   background-color: #AAAAAA;
+}
+
+.content-box {
    text-align: center;
    font-family: 'Cabin', sans-serif;
    font-size: 1.2em;
-   background-color: #FFFD77;
    padding: 3%;
    box-shadow: 5px 5px 8px #000;
    box-sizing: border-box;
    border-radius: 0 1px;
+   margin: 4%;
 }
 
+.content-box img {
+   max-height: 100%;
+   max-width: 100%;
+   object-fit: contain;
+}
+
+.content-box a {
+   color: black;
+}
+
+.bg-yellow {
+   background-color: #FFFD77;
+   color: black;
+}
+
+.bg-lavender {
+   background-color: #CBC3E3;
+   color: black;
+}
+
+.bg-red {
+   background-color: #ED1C24;
+   color: black;
+}
+
+.article-aside {
+   display: flex;
+}
+
+article {
+   width: 77%;
+}
+
+aside {
+   width: 22%;
+   margin-top: 35px;
+}
+
+#about-team {
+   text-align: center;
+}
+
+#about-team img {
+   max-height: 128px;
+   max-width: 128px;
+   border: 3px solid #220F2E;
+   margin: 5px auto;
+}
+
+#about-team ul {
+   display: block;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+#about-team li {
+   margin: auto 20px;
+}
+
+#index-basic-info {
+   display: block;
+   padding: 2%;
+   margin: 2% 10%;
+   width: 80%;
+   background-color: #eeeeee;
+   text-align: center;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-weight: bold;
+
+}
+
+.frame {
+   position: relative;
+   max-width: 450px;
+   margin: 2% auto;
+   border: 5px solid #220F2E;
+}
+
+.frame:hover {
+   transform: scale(1.25);
+}
+
+.pic-text {
+   position: absolute;
+   bottom: 0;
+   background: rgba(0, 0, 0, 0.5);
+   color: #fff;
+   width: 100%;
+   padding: 10px;
+   text-align: center;
+   font-size: 1.2em;
+   font-family: Verdana, Arial, sans-serif;
+   font-weight: bold;
+}
+
+.contact-us {
+   display: block;
+   text-align: center;
+   background: #CBC3E3;
+   padding: 2%;
+}
+
+.map-section {
+   padding: 4%;
+   border: solid 4px #220F2E;
+   text-align: center;
+}
+
+.map-section h2 {
+   font-family: 'Kalam', cursive;
+   font-weight: bold;
+}
+
+.map {
+   margin: 2%;
+   border: solid 2px #220F2E;
+   max-height: 100%;
+   max-width: 100%;
+}
+
+.tablet-desktop-header {
+   display: none;
+}
+
+.tablet-desktop {
+   display: none;
+}
+
+/* Styling for Adpotions Page in mobile*/
+.container-fluid {
+   display: none;
+}
+
+.adoptionListItem h5,
+h3 {
+   text-align: center;
+   font-weight: bold;
+}
+
+.adoptionListItem p {
+   padding-left: 10px;
+}
+
+.container-fluid h3,
+h5 {
+   text-align: center;
+   font-family: 'Cabin', sans-serif;
+   font-weight: bold;
+   font-size: 4em;
+}
+
+.staticPetList img {
+   border: 5px solid #555;
+   border-radius: 25px;
+}
 
 /* Styling for footer */
 footer {
-   position: fixed;
+   position: static;
    left: 0;
    bottom: 0;
    width: 100%;
    background: linear-gradient(to bottom right, #F5F5F5, #429EB3);
    color: #220F2E;
-   text-align: Left;
+   text-align: left;
    padding: 10px;
+}
+
+footer a {
+   color: #220F2E;
 }
 
 .footer-container h2 {
@@ -120,8 +290,8 @@ footer {
    padding-right: 40px;
 }
 
-.nav-bg{
-   background: #220F2E;   
+.nav-bg {
+   background: #220F2E;
 }
 
 .list-inline li {
@@ -133,19 +303,11 @@ footer {
    padding: 10px;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 /* End of styling for footer /*
 
 /* Styles for tablet viewport only */
 @media (min-width: 768px) {
-   
-   .mobile-header {
-      display: none;
-   }
-
-   .tablet-desktop-header {
-      display: block;
-      margin: auto;
-   }
 
    header {
       text-align: left;
@@ -153,14 +315,6 @@ footer {
 
    header img {
       max-height: 150px;
-   }
-
-   .mobile {
-      display: none;
-   }
-
-   .tablet-desktop {
-      display: block;
    }
 
    footer {
@@ -199,11 +353,113 @@ footer {
    .list-inline li:hover {
       transform: scale(1.4);
    }
+
+   .contact-img {
+      text-align: center;
+   }
+
+   .contact-img img {
+      text-align: center;
+      margin: 2%;
+   }
+
+   .contact-info {
+      display: block;
+      text-align: center;
+      padding: 2%;
+   }
+
+   .mobile {
+      display: none;
+   }
+
+   .tablet-desktop {
+      display: block;
+   }
+
+   .mobile-header {
+      display: none;
+   }
+
+   .tablet-desktop-header {
+      display: block;
+      margin: auto;
+   }
+
+   .desktop {
+      display: none;
+   }
+
+   /* Style Rules for Adoptions Page in desktop*/
+   #carouselSidebar {
+      margin: 0 auto;
+      /* centers the carousel */
+      width: 50%;
+      /* adjust as needed */
+   }
+
+   .container-fluid {
+      display: block;
+   }
+
+   .staticPetList {
+      display: none;
+   }
+
+   .carousel-caption {
+      position: absolute;
+      top: 0;
+      width: 33.33%;
+      background-color: rgba(0, 0, 0, 0.5);
+      /* add a semi-transparent background */
+      color: #fff;
+      /* set the text color to white */
+      padding: 1.25rem;
+      text-align: left;
+      transform: translateX(450px);
+   }
+
+   .carousel-caption ul {
+      text-align: left;
+   }
+
+   .container-fluid img {
+      border: 5px solid #555;
+      border-radius: 25px;
+   }
+
 }
 
 /* Styles for Desktop viewport only */
-@media (min-width: 960px) {
-   
+@media (min-width: 1200px) {
+
+   .contact-img {
+      width: 50%;
+   }
+
+   .contact-img img {
+      max-width: 100%;
+      max-height: 100%;
+   }
+
+   .contact-us {
+      display: flex;
+   }
+
+   .contact-info {
+      text-align: left;
+      padding-left: 2%;
+      width: 48%;
+   }
+
+   .desktop {
+      display: block;
+   }
+
+   .tablet {
+      display: none;
+   }
+
 }
 .pet-story {
    display: flex;
