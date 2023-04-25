@@ -459,9 +459,15 @@ footer a {
    display: block;
    margin-bottom: 20px;
    background-color: #FFFD77;
+<<<<<<< HEAD
 }
 
 .pet-story img {
+=======
+   font-family: 'Cabin', sans-serif;
+ }
+ .pet-story img{
+>>>>>>> 980b10d2f3e79d4c6beab2e198816fb4865f1334
    max-height: 600px;
    max-width: 600px;
    margin: 3%;
@@ -633,6 +639,7 @@ footer a {
       width: 50%;
    }
 
+<<<<<<< HEAD
    /* Styling for Andrew's Portfolio Page in tablet*/
 
    .andrew-portfolioh2 h2 {
@@ -704,6 +711,8 @@ footer a {
       background-color: #FFFD77;
     } */
 
+=======
+>>>>>>> 980b10d2f3e79d4c6beab2e198816fb4865f1334
 }
 
 /* Styles for Desktop viewport only */
