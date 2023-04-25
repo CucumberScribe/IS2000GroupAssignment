@@ -121,6 +121,11 @@ main {
    color: black;
 }
 
+.bg-purple {
+   background-color: #220F2E;
+   color: #F5F5F5;
+}
+
 .article-aside {
    display: flex;
 }
@@ -217,12 +222,48 @@ aside {
    max-width: 100%;
 }
 
+.contact-btn {
+   padding: 2%;
+   margin: 3% auto;
+   text-align: center;
+   border-radius: 5px;
+   width: 80%;
+}
+
+.contact-btn a {
+   color: #F5F5F5;
+   font-weight: bold;
+   font-size: 2em;
+   text-decoration: none;
+}
+
+.contact-btn a:hover {
+   text-decoration: none;
+   color: #F5F5F5;
+}
+
 .pet-story {
    font-size: 1.3em;
 }
 
+.pet-story img {
+   object-fit: cover;
+}
+
 #dingo p, #louis p, #daisy p {
    display: none;
+}
+
+.video-block {
+   padding: 2%;
+   margin: 1% auto;
+
+}
+
+#vid {
+   display: none;
+   text-align: center;
+   padding: 4%;
 }
 
 
