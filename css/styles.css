@@ -135,6 +135,11 @@ main {
    color: #F5F5F5;
 }
 
+.bg-white {
+   background-color: #F5F5F5;
+   color: #220F2E;
+}
+
 .article-aside {
    display: flex;
 }
@@ -335,7 +340,7 @@ tr:nth-child(odd) {
 }
 
 
-/* Styling for Adpotions Page in mobile*/
+/* Styling for Adoptions Page in mobile*/
 .container-fluid {
    display: none;
 }
@@ -376,8 +381,16 @@ h5 {
    margin-right: auto;
 }
 
-.imageRow {
+.about-us-list {
    display: block;
+}
+
+.about-us-list-item {
+   display: inline;
+}
+
+.about-us-columns {
+   display: none;
 }
 
 figcaption {
@@ -409,6 +422,36 @@ figcaption {
 }
 
 form {
+   text-align: left;
+}
+
+/* Styling for Michaels's Portfolio Page in mobile*/
+.super-bold {
+   font-weight: bold;
+   font-size: 3em;
+}
+
+.michael-column1 {
+   float: left;
+   width: 50%;
+   text-align: center;
+}
+
+.michael-column2 {
+   float: left;
+   width: 50%;
+   text-align: left;
+   border-radius: 25px;
+   padding: 20px;
+}
+
+.michael-picture {
+   text-align: center;
+   border-radius: 25px;
+   border: 3px solid #F5F5F5;
+}
+
+.michael-list {
    text-align: left;
 }
 
@@ -689,7 +732,7 @@ footer a {
       display: flex;
    }
 
-   /*Styling Rules For About Us*/
+   /*Styling Rules For About Us In Tablet*/
    
    .about-us-image {
       display: inline-block;
@@ -698,6 +741,21 @@ footer a {
    figcaption {
       display: inline-block;
       font-style: normal;
+   }
+
+   .about-us-list{
+      display: none;
+   }
+
+   .about-us-columns {
+      display: inline-block;
+      float: left;
+      width: 25%;
+   }
+
+   .portrait {
+      padding: 0;
+      border: 2px solid #000;
    }
 
    /*Styling Rules For About Us Animation*/
