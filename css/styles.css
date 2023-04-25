@@ -439,6 +439,7 @@ footer a {
    display: block;
    margin-bottom: 20px;
    background-color: #FFFD77;
+   font-family: 'Cabin', sans-serif;
  }
  .pet-story img{
    max-height: 600px;
@@ -610,18 +611,6 @@ footer a {
       display:block;
       width: 50%;
    }
-
-   /* For some reason, this breaks the styling - commenting it out for now */
-   /* .pet-story {
-      flex-direction: column;
-      background-color: #FFFD77;
-    }
-  
-  
-    .story-details {
-      margin-bottom: 20px;
-      background-color: #FFFD77;
-    } */
 
 }
 
