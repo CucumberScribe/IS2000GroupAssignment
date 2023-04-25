@@ -46,8 +46,8 @@ Requirements not per page (specific):
 (1 on index) Use of 2 different pseudo-classes somewhere on your pages
 (✓) One page that includes a table, such as numbers from a spreadsheet, price sheet, or a comparison chart. (use pseudo element on the table)
 (✓) Include a form with different inputs (ie. checkbox, radio, textarea, password, etc.) but it MUST have at least 4 different inputs as well as a SUBMIT button
-(1 in stories) You need to have at least 2 JavaScript functions associated with your pages on different pages
-(Index has animation (transform: scale), need 1 more) Include an animation on 2 different images (2 different pages)
+(✓, 1 in stories, one in donations) You need to have at least 2 JavaScript functions associated with your pages on different pages
+(✓ Index has animation (transform: scale), About Us has rotating H2 tags) Include an animation on 2 different images (2 different pages)
 (✓) Add a border somewhere on your pages (box border, table, etc.)
 (✓) EXTRA CREDIT: Add audio or video to your site and make it applicable to your pages, (it should enhance your pages). (10 points)
 

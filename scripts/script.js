@@ -37,3 +37,8 @@ function show_hide_Host() {
     x.style.display = "none";
   }
 }
+
+//Thank You, Alert
+function thank_you() {   
+  alert("Thank You For Your Support!");  
+}  
