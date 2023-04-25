@@ -680,7 +680,6 @@ footer a {
       width: 50%;
    }
 
-<<<<<<< HEAD
    /* Styling for Andrew's Portfolio Page in tablet*/
 
    .andrew-portfolioh2 h2 {
@@ -740,20 +739,6 @@ footer a {
       line-height: 100px;
    }
 
-   /* For some reason, this breaks the styling - commenting it out for now */
-   /* .pet-story {
-      flex-direction: column;
-      background-color: #FFFD77;
-    }
-  
-  
-    .story-details {
-      margin-bottom: 20px;
-      background-color: #FFFD77;
-    } */
-
-=======
->>>>>>> 980b10d2f3e79d4c6beab2e198816fb4865f1334
 }
 
 /* Styles for Desktop viewport only */
