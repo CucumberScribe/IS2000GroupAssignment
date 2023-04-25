@@ -356,6 +356,27 @@ h5 {
    border-radius: 25px;
 }
 
+/*Styling Rules For About Us In Mobile*/
+
+.removeLowerPadding{
+   padding-bottom: 0%;
+}
+
+.about-us-image {
+   display: none;
+   box-shadow: 5px 5px 8px #000;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.imageRow {
+   display: block;
+}
+
+figcaption {
+   font-style: italic;
+}
+
 /*Styling Rules For Donations In Mobile*/
 
 .no-shadow {
@@ -597,6 +618,44 @@ footer a {
 
    .pet-story {
       display: flex;
+   }
+
+   /*Styling Rules For About Us*/
+   
+   .about-us-image {
+      display: inline-block;
+   }
+
+   figcaption {
+      display: inline-block;
+      font-style: normal;
+   }
+
+   /*Styling Rules For About Us Animation*/
+
+   .rotating-Text {
+      margin-left: -40px;
+   
+   -webkit-animation: rotation 4s infinite linear;
+   }
+
+
+   @-webkit-keyframes rotation {
+   0% {
+      -webkit-transform: rotate(0deg);
+   }
+   25% {
+      -webkit-transform: rotate(2deg);
+   }
+   50% {
+      -webkit-transform: rotate(0deg);
+   }
+   75% {
+      -webkit-transform: rotate(-2deg);
+   }
+   100% {
+      -webkit-transform: rotate(0deg);
+   }
    }
 
    /*Styling Rules For Donations In Tablet*/
