@@ -264,7 +264,9 @@ section {
    font-family: 'Cabin', sans-serif;
 }
 
-#dingo p, #louis p, #daisy p {
+#dingo p,
+#louis p,
+#daisy p {
    display: none;
 }
 
@@ -315,7 +317,8 @@ caption {
    padding: 1%;
 }
 
-th, td {
+th,
+td {
    border: 1px solid #000;
    padding: 2%;
    text-align: center;
@@ -385,7 +388,24 @@ h5 {
 }
 
 form {
-	text-align: left;
+   text-align: left;
+}
+
+/* Styling for Andrew's Portfolio Page in mobile*/
+
+.andrew-portfolioh2 h2 {
+   text-align: center;
+   font-size: 5em;
+   font-family: 'Oswald', sans-serif;
+   color: #220F2E;
+   width: 100%;
+}
+
+.andrew-image-container img {
+   max-width: 100%;
+   height: auto;
+   border-radius: 15px;
+   border: 10px solid teal;
 }
 
 /* Styling for footer */
@@ -443,13 +463,15 @@ footer a {
    display: block;
    margin-bottom: 20px;
    background-color: #FFFD77;
- }
- .pet-story img{
+}
+
+.pet-story img {
    max-height: 600px;
    max-width: 600px;
    margin: 3%;
- }
- .adopt-btn {
+}
+
+.adopt-btn {
    display: inline-block;
    background-color: #008080;
    color: #fff;
@@ -457,11 +479,11 @@ footer a {
    text-decoration: none;
    font-weight: bold;
    border-radius: 4px;
- }
- 
- .adopt-btn:hover {
+}
+
+.adopt-btn:hover {
    background-color: #006666;
- }
+}
 
  #aramis-grid {
    display: grid;
@@ -649,15 +671,89 @@ footer a {
    /*Styling Rules For Donations In Tablet*/
 
    .image-column {
-      display:block;
+      display: block;
       width: 50%;
    }
 
    .content-column {
-      display:block;
+      display: block;
       width: 50%;
    }
 
+<<<<<<< HEAD
+   /* Styling for Andrew's Portfolio Page in tablet*/
+
+   .andrew-portfolioh2 h2 {
+      text-align: center;
+      padding-left: 30px;
+      font-size: 7em;
+      font-family: 'Oswald', sans-serif;
+      color: #220F2E;
+   }
+
+   .andrew-portfolio {
+      display: flex;
+      flex-wrap: nowrap;
+      width: 100%;
+      background-color: #CBC3E3;
+   }
+
+   .left-column {
+      flex: 1;
+      background-color: lightpurple;
+      padding: 20px;
+      padding-top: 100px;
+      padding-right: 10px;
+   }
+
+   .left-column ul {
+      line-height: 200%;
+      font-size: 1.3em;
+   }
+
+   .right-column {
+      flex: 1;
+      padding: 20px;
+   }
+
+   .andrew-image-container {
+      text-align: right;
+      width: 100%;
+      padding-top: 50px;
+      padding-left: 20px;
+   }
+
+   .andrew-image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 15px;
+      border: 10px solid teal;
+   }
+
+   .andrewSocialMedia {
+      padding-top: 50px;
+      line-height: 100px;
+   }
+
+   .andrewSocialMedia ul {
+      padding-top: 50px;
+      line-height: 100px;
+   }
+
+   /* For some reason, this breaks the styling - commenting it out for now */
+   /* .pet-story {
+      flex-direction: column;
+      background-color: #FFFD77;
+    }
+  
+  
+    .story-details {
+      margin-bottom: 20px;
+      background-color: #FFFD77;
+    } */
+
+=======
+>>>>>>> 980b10d2f3e79d4c6beab2e198816fb4865f1334
 }
 
 /* Styles for Desktop viewport only */
@@ -695,9 +791,4 @@ footer a {
 /* These rules will apply to all */
 /* Not the way it's supposed to be done, but it's here now */
 
- @media screen and (max-width: 768px) {
-   
- 
-   
-}
-
+@media screen and (max-width: 768px) {}
