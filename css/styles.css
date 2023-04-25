@@ -65,6 +65,12 @@ main {
    background-color: #F5F5F5;
 }
 
+/* For when the divs aren't aligning just right */
+#container {
+   background-color: #F5F5F5;
+}
+
+/* Styling for index top image */
 .top-image {
    position: relative;
    width: 100%;
@@ -75,6 +81,7 @@ main {
    object-fit: contain;
 }
 
+/* Used for the red box grid at bottom of index */
 .grid {
    display: grid;
    grid-template-columns: auto auto auto;
@@ -85,6 +92,7 @@ main {
    background-color: #AAAAAA;
 }
 
+/* Used for boxes in index, and some other areas */
 .content-box {
    text-align: center;
    font-family: 'Cabin', sans-serif;
@@ -106,6 +114,7 @@ main {
    color: black;
 }
 
+/* Variety of background colors to add */
 .bg-yellow {
    background-color: #FFFD77;
    color: black;
@@ -248,6 +257,7 @@ aside {
 
 .pet-story img {
    object-fit: cover;
+   border: solid 5px #ED1C24;
 }
 
 #dingo p, #louis p, #daisy p {
@@ -264,6 +274,57 @@ aside {
    display: none;
    text-align: center;
    padding: 4%;
+}
+
+.stats-expl {
+   width: 22%;
+   color: #F5F5F5;
+   font-size: 1.3em;
+   font-weight: bold;
+}
+
+#care-info {
+   text-align: center;
+   margin: 1%;
+   font-family: 'Marcellus', serif;
+}
+
+.table-container {
+   width: 76%;
+}
+
+table {
+   border: 3px solid #000;
+   border-collapse: collapse;
+   margin: 4% auto;
+   width: 75%;
+   box-shadow: 5px 5px 8px #000;
+   box-sizing: border-box;
+   border-radius: 0 1px;
+}
+
+caption {
+   text-align: center;
+   caption-side: top;
+   font-size: 1.5em;
+   font-weight: bold;
+   padding: 1%;
+}
+
+th, td {
+   border: 1px solid #000;
+   padding: 2%;
+   text-align: center;
+}
+
+th {
+   background-color: #429EB3;
+   color: #F5F5F5;
+   font-size: 1.15em;
+}
+
+tr:nth-child(odd) {
+   background-color: #ADD8E6;
 }
 
 
@@ -346,6 +407,30 @@ footer a {
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.pet-story {
+   display: block;
+   margin-bottom: 20px;
+   background-color: #FFFD77;
+ }
+ .pet-story img{
+   max-height: 600px;
+   max-width: 600px;
+   margin: 3%;
+ }
+ .adopt-btn {
+   display: inline-block;
+   background-color: #008080;
+   color: #fff;
+   padding: 10px 20px;
+   text-decoration: none;
+   font-weight: bold;
+   border-radius: 4px;
+ }
+ 
+ .adopt-btn:hover {
+   background-color: #006666;
+ }
+
 /* End of styling for footer /*
 
 /* Show and hide for media queries */
@@ -359,9 +444,8 @@ footer a {
    display: none;
 }
 
-
 /* Styles for tablet viewport only */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
    header {
       text-align: left;
@@ -415,6 +499,7 @@ footer a {
    .contact-img img {
       text-align: center;
       margin: 2%;
+      border: solid 5px #220F2E;
    }
 
    .contact-info {
@@ -482,6 +567,22 @@ footer a {
       border-radius: 25px;
    }
 
+   .pet-story {
+      display: flex;
+   }
+
+   /* For some reason, this breaks the styling - commenting it out for now */
+   /* .pet-story {
+      flex-direction: column;
+      background-color: #FFFD77;
+    }
+  
+  
+    .story-details {
+      margin-bottom: 20px;
+      background-color: #FFFD77;
+    } */
+
 }
 
 /* Styles for Desktop viewport only */
@@ -515,41 +616,13 @@ footer a {
    }
 
 }
-.pet-story {
-   display: flex;
-   margin-bottom: 20px;
-   background-color: #FFFD77;
- }
- .pet-story img{
-   max-height: 600px;
-   max-width: 600px;
-   margin: 3%;
- }
- .adopt-btn {
-   display: inline-block;
-   background-color: #008080;
-   color: #fff;
-   padding: 10px 20px;
-   text-decoration: none;
-   font-weight: bold;
-   border-radius: 4px;
- }
- 
- .adopt-btn:hover {
-   background-color: #006666;
- }
+
+/* These rules will apply to all */
+/* Not the way it's supposed to be done, but it's here now */
+
  @media screen and (max-width: 768px) {
    
  
-   .pet-story {
-     flex-direction: column;
-     background-color: #FFFD77;
-   }
- 
- 
-   .story-details {
-     margin-bottom: 20px;
-     background-color: #FFFD77;
-   }
+   
 }
 
