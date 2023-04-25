@@ -485,33 +485,36 @@ footer a {
    background-color: #006666;
 }
 
- #aramis-grid {
+ .aramis-grid {
    display: grid;
    grid-template-columns: 10% 79% 10%;
  }
 
- #aramis-left {
+ .aramis-left {
    background: linear-gradient(to right, #F5F5F5, #FFFD77);
    border-right: solid 5px #220F2E;
  }
 
- #aramis-center {
+ .aramis-center {
    text-align: center;
    margin: 2%;
  }
 
- #aramis-right {
+ .aramis-right {
    background: linear-gradient(to right, #FFFD77, #F5F5F5);
    border-left: solid 5px #220F2E;
  }
 
- #aramis-port-header {
+ .aramis-port-header {
    padding: 5%;
    padding-bottom: 2%;
    margin: 0 auto;
    width: 70%;
    font-family: 'Neucha', cursive;
    text-align: center;
+ }
+
+ .aramis-port-header h1 {
    font-size: 5em;
  }
 
@@ -527,6 +530,17 @@ footer a {
    max-width: 100%;
    max-height: 100%;
  }
+
+.aramis-info {
+   padding: 5%;
+   font-size: 1.6em;
+   color: #f5f5f5;
+   font-weight: bold;
+}
+
+.aramis-info a h4 {
+   font-weight: bold;
+}
 
 /* End of styling for footer /*
 
