@@ -1,14 +1,9 @@
 <!DOCTYPE html>
-<!-- Contributors: 
-    Main: PJ
-    Nav: Michael Hoff
-    Footer: Andrew Webster
-    Favicon & Icon: Aramis Hahne
--->
+<!-- Contributors: PJ -->
 <html lang="en">
 
 	<head>
-		<title>Iron County Humane Animal Shelter</title>
+		<title>Stories</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/styles.css">
@@ -22,6 +17,9 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 		<link rel="icon" sizes="192x192" href="images/android-chrome-192x192.png">
+
+		<!-- Javascript for show and hide -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -91,14 +89,27 @@
 			  <p><strong>Sex:</strong> Male</p>
 			  <p><strong>Color:</strong> Tan</p>
 			  <p><strong>Weight:</strong> 15 lbs</p>
-			  <button>Show More</button>
-			  <p>Louis is an adorable pug/miniature pinscher mix (Also called a "Muggins"). He was rescued from a farm and is now eagerly searching for his forever home. Louis is extremely playful and active and loves playing fetch and going for long walks and hikes. Louis gets along well with kids and other dogs, making him a great addition to any family. However, he is not overly familiar with cats yet. By adopting Louis, you would be inviting a loyal and affectionate companion into your home! </p> 
-			  <video width="360" height="600" controls>
-				<source src="/media/louisvid.mp4" type="video/mp4">
-				<source src="media/louisvid.webm" type="video/webm">
-				<p>Your browser does not support the video tag.</p>
-			  </video>
+			  <script>
+				$(document).ready(function(){
+					$("#louis button").click(function(){
+					  $("#louis p").toggle();
+					});
+				  });
+			  </script>
+			  <div id="louis">
+				<button>Show / Hide</button>
+				<p>Louis is an adorable pug/miniature pinscher mix (Also called a "Muggins"). He was rescued from a farm and is now eagerly searching for his forever home. Louis is extremely playful and active and loves playing fetch and going for long walks and hikes. Louis gets along well with kids and other dogs, making him a great addition to any family. However, he is not overly familiar with cats yet. By adopting Louis, you would be inviting a loyal and affectionate companion into your home! </p>
+			  </div>
+			  <br>
 			  <a href="adoptions.html" class="adopt-btn">Adopt Louis</a>
+			</div>
+			<div class="video-block">
+			<button onClick="showVid()">Show Video</button>
+				<video id="vid" width="360" height="600" controls>
+					<source src="/media/louisvid.mp4" type="video/mp4">
+					<source src="media/louisvid.webm" type="video/webm">
+					<p>Your browser does not support the video tag.</p>
+				</video>
 			</div>
 		  </section>
 		  <section class="pet-story">
@@ -110,9 +121,18 @@
 			  <p><strong>Sex:</strong> Male</p>
 			  <p><strong>Color:</strong> Black/Brown</p>
 			  <p><strong>Weight:</strong> 11 lbs</p>
-			  <p>Dingo is a Miniature Pinscher with charm and spirit. Saved from neglectful circumstances, he is currently searching for a loving household. Intelligence and a desire to learn are the main characteristics that define Dingo. An active household that provides him with enough physical activity and mental stimulation would be best for him. An experienced dog owner searching for a clever and loyal companion may find Dingo to be the perfect match!</p>
-			  <button class="show-more-button">Show More</button>
-			  <p class="hidden-paragraph" style="display:none">This is the hidden paragraph.</p> 
+			  <script>
+				$(document).ready(function(){
+					$("#dingo button").click(function(){
+					  $("#dingo p").toggle();
+					});
+				  });
+			  </script>
+			  <div id="dingo">
+				<button>Show / Hide</button>
+				<p>Dingo is a Miniature Pinscher with charm and spirit. Saved from neglectful circumstances, he is currently searching for a loving household. Intelligence and a desire to learn are the main characteristics that define Dingo. An active household that provides him with enough physical activity and mental stimulation would be best for him. An experienced dog owner searching for a clever and loyal companion may find Dingo to be the perfect match!</p>
+			  </div>
+			  <br>
 			  <a href="adoptions.html" class="adopt-btn">Adopt Dingo</a>
 			</div>
 		  </section>
@@ -125,29 +145,26 @@
 			  <p><strong>Age:</strong> 5 </p>
 			  <p><strong>Color:</strong> Black</p>
 			  <p><strong>Weight:</strong> 10 lbs</p>
-			  <p>Daisy is a sweet and loving Miniature Pinscher/Chihuahua mix who is looking for her forever home. She is a small and affectionate dog with a gentle and calm nature. Daisy enjoys snuggling on the couch and going for leisurely walks. She gets along well with other dogs and is also good with kids. Daisy is fully vaccinated and spayed. Adopting Daisy would mean adding a loyal and loving companion to your family!</p>
-			  <button class="show-more-button">Show More</button>
-			  <p class="hidden-paragraph" style="display:none">This is the hidden paragraph.</p> 
-			  <a href="adoptions.html" class="adopt-btn">Adopt Daisy</a>
+			  <script>
+				$(document).ready(function(){
+					$("#daisy button").click(function(){
+					  $("#daisy p").toggle();
+					});
+				  });
+			  </script>
+			  <div id="daisy">
+				<button class="show-more-button">Show / Hide</button>
+				<p>Daisy is a sweet and loving Miniature Pinscher/Chihuahua mix who is looking for her forever home. She is a small and affectionate dog with a gentle and calm nature. Daisy enjoys snuggling on the couch and going for leisurely walks. She gets along well with other dogs and is also good with kids. Daisy is fully vaccinated and spayed. Adopting Daisy would mean adding a loyal and loving companion to your family!</p>
+			  </div>
+			  <br>
+			  <a href="#" class="adopt-btn">Adopt Daisy</a>
 			</div>
 		  </section>
+		  <p>Created by: <a href="pj-portfolio.html">PJ Dadson</a></p>
       </main>
 
 			<footer>
 			  <div class="footer-container">
-				<h2> Follow Our Social Media!</h2>
-				<div class="social-media-list">
-				  <ul class="list-inline">
-					<li class="list-inline-item"><a href="https://www.facebook.com/" target="_blank"><img
-						  src="images/facebook-icon.png" alt="Facebook Icon" width="50" height="50"></a></li>
-					<li class="list-inline-item"><a href="https://www.twitter.com/" target="_blank"><img
-						  src="images/twitter-icon.png" alt="Twitter Icon" width="50" height="50"></a></li>
-					<li class="list-inline-item"><a href="https://www.instagram.com/" target="_blank"><img
-						  src="images/instagram-icon.png" alt="Instagram Icon" width="50" height="50"></a></li>
-					<li class="list-inline-item"><a href="https://www.tiktok.com/" target="_blank"><img
-						  src="images/tiktok-icon.png" alt="Tiktok Icon" width="50" height="50"></a></li>
-				  </ul>
-				</div>
 				<p>&copy; 2023 Iron County Humane Animal Shelter. All Rights Reserved.</p>
 				<p>Created By PJ Dadson</p>
 			  </div>

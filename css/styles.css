@@ -65,6 +65,12 @@ main {
    background-color: #F5F5F5;
 }
 
+/* For when the divs aren't aligning just right */
+#container {
+   background-color: #F5F5F5;
+}
+
+/* Styling for index top image */
 .top-image {
    position: relative;
    width: 100%;
@@ -75,6 +81,7 @@ main {
    object-fit: contain;
 }
 
+/* Used for the red box grid at bottom of index */
 .grid {
    display: grid;
    grid-template-columns: auto auto auto;
@@ -85,6 +92,7 @@ main {
    background-color: #AAAAAA;
 }
 
+/* Used for boxes in index, and some other areas */
 .content-box {
    text-align: center;
    font-family: 'Cabin', sans-serif;
@@ -106,6 +114,7 @@ main {
    color: black;
 }
 
+/* Variety of background colors to add */
 .bg-yellow {
    background-color: #FFFD77;
    color: black;
@@ -119,6 +128,16 @@ main {
 .bg-red {
    background-color: #ED1C24;
    color: black;
+}
+
+.bg-purple {
+   background-color: #220F2E;
+   color: #F5F5F5;
+}
+
+.bg-white {
+   background-color: #F5F5F5;
+   color: #220F2E;
 }
 
 .article-aside {
@@ -217,15 +236,111 @@ aside {
    max-width: 100%;
 }
 
-.tablet-desktop-header {
+.contact-btn {
+   padding: 2%;
+   margin: 3% auto;
+   text-align: center;
+   border-radius: 5px;
+   width: 80%;
+}
+
+.contact-btn a {
+   color: #F5F5F5;
+   font-weight: bold;
+   font-size: 2em;
+   text-decoration: none;
+}
+
+.contact-btn a:hover {
+   text-decoration: none;
+   color: #F5F5F5;
+}
+
+.pet-story {
+   font-size: 1.3em;
+}
+
+.pet-story img {
+   object-fit: cover;
+   border: solid 5px #ED1C24;
+}
+
+section {
+   font-family: 'Cabin', sans-serif;
+}
+
+#dingo p,
+#louis p,
+#daisy p {
    display: none;
 }
 
-.tablet-desktop {
-   display: none;
+.video-block {
+   padding: 2%;
+   margin: 1% auto;
+
 }
 
-/* Styling for Adpotions Page in mobile*/
+#vid {
+   display: none;
+   text-align: center;
+   padding: 4%;
+}
+
+.stats-expl {
+   width: 22%;
+   color: #F5F5F5;
+   font-size: 1.3em;
+   font-weight: bold;
+}
+
+#care-info {
+   text-align: center;
+   margin: 1%;
+   font-family: 'Marcellus', serif;
+}
+
+.table-container {
+   width: 76%;
+}
+
+table {
+   border: 3px solid #000;
+   border-collapse: collapse;
+   margin: 4% auto;
+   width: 75%;
+   box-shadow: 5px 5px 8px #000;
+   box-sizing: border-box;
+   border-radius: 0 1px;
+}
+
+caption {
+   text-align: center;
+   caption-side: top;
+   font-size: 1.5em;
+   font-weight: bold;
+   padding: 1%;
+}
+
+th,
+td {
+   border: 1px solid #000;
+   padding: 2%;
+   text-align: center;
+}
+
+th {
+   background-color: #429EB3;
+   color: #F5F5F5;
+   font-size: 1.15em;
+}
+
+tr:nth-child(odd) {
+   background-color: #ADD8E6;
+}
+
+
+/* Styling for Adoptions Page in mobile*/
 .container-fluid {
    display: none;
 }
@@ -251,6 +366,110 @@ h5 {
 .staticPetList img {
    border: 5px solid #555;
    border-radius: 25px;
+}
+
+/*Styling Rules For About Us In Mobile*/
+
+.removeLowerPadding{
+   padding-bottom: 0%;
+}
+
+.about-us-image {
+   display: none;
+   box-shadow: 5px 5px 8px #000;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.about-us-list {
+   display: block;
+}
+
+.about-us-list-item {
+   display: inline;
+}
+
+.about-us-columns {
+   display: none;
+}
+
+figcaption {
+   font-style: italic;
+}
+
+/*Styling Rules For Donations In Mobile*/
+
+.no-shadow {
+   box-shadow: none;
+}
+
+.display-hidden {
+   display: none;
+}
+
+.image-column {
+   display: none;
+}
+
+.content-column {
+   width: auto;
+}
+
+.donation-image {
+   box-shadow: 5px 5px 8px #000;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+form {
+   text-align: left;
+}
+
+/* Styling for Michaels's Portfolio Page in mobile*/
+.super-bold {
+   font-weight: bold;
+   font-size: 3em;
+}
+
+.michael-column1 {
+   float: left;
+   width: 50%;
+   text-align: center;
+}
+
+.michael-column2 {
+   float: left;
+   width: 50%;
+   text-align: left;
+   border-radius: 25px;
+   padding: 20px;
+}
+
+.michael-picture {
+   text-align: center;
+   border-radius: 25px;
+   border: 3px solid #F5F5F5;
+}
+
+.michael-list {
+   text-align: left;
+}
+
+/* Styling for Andrew's Portfolio Page in mobile*/
+
+.andrew-portfolioh2 h2 {
+   text-align: center;
+   font-size: 5em;
+   font-family: 'Oswald', sans-serif;
+   color: #220F2E;
+   width: 100%;
+}
+
+.andrew-image-container img {
+   max-width: 100%;
+   height: auto;
+   border-radius: 15px;
+   border: 10px solid teal;
 }
 
 /* Styling for footer */
@@ -304,10 +523,104 @@ footer a {
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.pet-story {
+   display: block;
+   margin-bottom: 20px;
+   background-color: #FFFD77;
+}
+
+.pet-story img {
+   max-height: 600px;
+   max-width: 600px;
+   margin: 3%;
+}
+
+.adopt-btn {
+   display: inline-block;
+   background-color: #008080;
+   color: #fff;
+   padding: 10px 20px;
+   text-decoration: none;
+   font-weight: bold;
+   border-radius: 4px;
+}
+
+.adopt-btn:hover {
+   background-color: #006666;
+}
+
+ .aramis-grid {
+   display: grid;
+   grid-template-columns: 10% 79% 10%;
+ }
+
+ .aramis-left {
+   background: linear-gradient(to right, #F5F5F5, #FFFD77);
+   border-right: solid 5px #220F2E;
+ }
+
+ .aramis-center {
+   text-align: center;
+   margin: 2%;
+ }
+
+ .aramis-right {
+   background: linear-gradient(to right, #FFFD77, #F5F5F5);
+   border-left: solid 5px #220F2E;
+ }
+
+ .aramis-port-header {
+   padding: 5%;
+   padding-bottom: 2%;
+   margin: 0 auto;
+   width: 70%;
+   font-family: 'Neucha', cursive;
+   text-align: center;
+ }
+
+ .aramis-port-header h1 {
+   font-size: 5em;
+ }
+
+ .aramis-frame {
+   position: relative;
+   max-width: 450px;
+   height: 100%;
+   margin: 2% auto;
+   border: 5px solid #220F2E;
+ }
+
+ .aramis-frame img {
+   max-width: 100%;
+   max-height: 100%;
+ }
+
+.aramis-info {
+   padding: 5%;
+   font-size: 1.6em;
+   color: #f5f5f5;
+   font-weight: bold;
+}
+
+.aramis-info a h4 {
+   font-weight: bold;
+}
+
 /* End of styling for footer /*
 
+/* Show and hide for media queries */
+/* DO NOT PUT ANYTHING BELOW THIS LINE PLS (that isn't inside the media query obvs) :) */
+
+.tablet-desktop-header {
+   display: none;
+}
+
+.tablet-desktop {
+   display: none;
+}
+
 /* Styles for tablet viewport only */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
    header {
       text-align: left;
@@ -361,6 +674,7 @@ footer a {
    .contact-img img {
       text-align: center;
       margin: 2%;
+      border: solid 5px #220F2E;
    }
 
    .contact-info {
@@ -426,6 +740,133 @@ footer a {
    .container-fluid img {
       border: 5px solid #555;
       border-radius: 25px;
+   }
+
+   .pet-story {
+      display: flex;
+   }
+
+   /*Styling Rules For About Us In Tablet*/
+   
+   .about-us-image {
+      display: inline-block;
+   }
+
+   figcaption {
+      display: inline-block;
+      font-style: normal;
+   }
+
+   .about-us-list{
+      display: none;
+   }
+
+   .about-us-columns {
+      display: inline-block;
+      width: 25%;
+   }
+
+   .portrait {
+      padding: 0;
+      border: 2px solid #000;
+   }
+
+   /*Styling Rules For About Us Animation*/
+
+   .rotating-Text {
+      margin-left: -40px;
+   
+   -webkit-animation: rotation 4s infinite linear;
+   }
+
+
+   @-webkit-keyframes rotation {
+   0% {
+      -webkit-transform: rotate(0deg);
+   }
+   25% {
+      -webkit-transform: rotate(2deg);
+   }
+   50% {
+      -webkit-transform: rotate(0deg);
+   }
+   75% {
+      -webkit-transform: rotate(-2deg);
+   }
+   100% {
+      -webkit-transform: rotate(0deg);
+   }
+   }
+
+   /*Styling Rules For Donations In Tablet*/
+
+   .image-column {
+      display: block;
+      width: 50%;
+   }
+
+   .content-column {
+      display: block;
+      width: 50%;
+   }
+
+   /* Styling for Andrew's Portfolio Page in tablet*/
+
+   .andrew-portfolioh2 h2 {
+      text-align: center;
+      padding-left: 30px;
+      font-size: 7em;
+      font-family: 'Oswald', sans-serif;
+      color: #220F2E;
+   }
+
+   .andrew-portfolio {
+      display: flex;
+      flex-wrap: nowrap;
+      width: 100%;
+      background-color: #CBC3E3;
+   }
+
+   .left-column {
+      flex: 1;
+      background-color: lightpurple;
+      padding: 20px;
+      padding-top: 100px;
+      padding-right: 10px;
+   }
+
+   .left-column ul {
+      line-height: 200%;
+      font-size: 1.3em;
+   }
+
+   .right-column {
+      flex: 1;
+      padding: 20px;
+   }
+
+   .andrew-image-container {
+      text-align: right;
+      width: 100%;
+      padding-top: 50px;
+      padding-left: 20px;
+   }
+
+   .andrew-image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 15px;
+      border: 10px solid teal;
+   }
+
+   .andrewSocialMedia {
+      padding-top: 50px;
+      line-height: 100px;
+   }
+
+   .andrewSocialMedia ul {
+      padding-top: 50px;
+      line-height: 100px;
    }
 
 }
@@ -499,121 +940,3 @@ footer a {
    }
 }
 
-
-
-
-
-body, figure, h1, h2, p {
-   margin: 0;
-   padding: 0;
- }
- 
- body {
-   font-family:'Times New Roman', Times, serif;
-   background: linear-gradient(to right, #fff7db, #ffeaae);
-   color: #333;
- }
- .floating-headerpj {
-   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999;
-  text-align: center;
- }
- 
- @media (max-width: 768px) {
-   .floating-headerpj {
-     position: static; 
-   }
- }
- 
- @media (min-width: 769px) {
-   .floating-headerpj {
-     position: fixed; 
-     top: 0;
-     left: 0;
-     width: 100%;
-     z-index: 999; 
-   }
- }
- 
- 
- 
- h1 {
-   font-size: 36px;
-   color: black;
-   margin-bottom: 10px;
- }
- 
- nav ul {
-   list-style-type: none;
-   display: flex; 
-   justify-content: center; 
- }
- 
- nav ul li {
-   display: inline;
- }
- 
- nav ul li a {
-   display: inline-block;
-   padding: 10px 20px;
-   color: black;
-   text-decoration:underline;
- }
- 
- nav ul li a:hover {
-   background-color: lightgoldenrodyellow;
-   border-radius: 5px;
-   transition: background-color 0.3s ease-in-out;
-   transform: scale(1.5);
- }
- 
- section {
-   padding: 40px;
- }
- 
- section h2 {
-   font-size: 24px;
-   margin-bottom: 20px;
- }
- 
- section img {
-   max-width: 100%;
-   height: auto;
-   margin-bottom: 80px;
-   margin-top: 80px;
-   display: block;
-   border: 3px solid #555;
-   box-shadow: 2px 4px 10px rgba(1, 1, 1, 1.3);
-   border-radius: 50%;
-   margin-left: auto;
-   margin-right: auto;
- }
- section img:hover {
-   transform:scale(1.5);
-   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
- }
- section p {
-   font-size: 18px;
-   margin-bottom: 10px;
- }
- 
- .footer {
-   background-color: #333;
-   color: #fff;
-   padding: 20px;
-   text-align: center;
- }
- 
- .footer .social-media img {
-   width: 30px;
-   height: 30px;
-   margin: 0 10px;
- }
- 
- .footer p {
-   margin-top: 10px;
- }
- 

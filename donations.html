@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<!-- Contributors: Michael Hoff-->
+<html lang="en">
+
+	<head>
+		<title>Donations</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/styles.css">
+		<!-- Custom Fonts -->
+		<!-- Font should be used for the "Overview portion of the main in index.html" -->
+		<!-- Feel free to use it wherever you want though. -->
+		<link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet"> 
+
+		<!-- Favicons -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+		<link rel="icon" sizes="192x192" href="images/android-chrome-192x192.png">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	</head>
+
+	<body>
+		<div id="container">
+            
+            <header class="mobile-header">
+                <div class="grid-col2">
+                    <a href="index.html"><h2>Iron County Humane Animal Shelter</h2></a>
+                    <img src="images/AnimalShelterLogo.png" alt="Iron County Humane Animal Shelter Logo">
+                </div>
+            </header>
+
+            <header class="tablet-desktop-header">
+                <a href="index.html"><img src="images/AnimalShelterLogoWithText.png" alt="Iron County Humane Animal Shelter Logo"></a>
+            </header>
+
+			<nav class="navbar navbar-expand-sm navbar-dark nav-bg">
+				
+				<!-- Hamburger menu icon -->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<!-- Navbar links -->
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">About Us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="care-policy.html">Care Policy</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="stories.html">Stories</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="adoptions.html">Adoptions</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="donations.html">Donations</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+
+			</nav>
+
+			<main>
+                <div class="content-box">
+                    <h1>Want to help? Donate Today!</h1>
+                    <h3>If you're unsure how you can help our shelter, feel free to explore the many ways YOU can help below.</h3>
+                </div>
+
+                <div class="content-box no-shadow bg-lavender">
+                    <h2>Donate Funds</h2>
+                    <p>Provide a single or monthly donation to our shelter!</p>
+                    <button onclick="show_hide_DonateFunds()">Show/Hide Form</button>
+
+                    <div id="DonateFunds" class="display-hidden">
+
+                        <div class="row">
+
+                            <div class="column image-column">
+                                <img class="donation-image" src="images/donations_image_1.PNG" alt="Dog Picture" width="300" height="300">
+                            </div>
+
+                            <div class="column content-column">
+
+                                <form class="form-grid">
+                                
+                                    <fieldset>
+                                        <legend>Donor Information</legend>
+                                        <p><label for="fName">First Name: &nbsp;&nbsp;&nbsp;</label>
+                                        <input type="text" name="fName" id="fName" required></p>
+
+                                        <p><label for="lName">Last Name: &nbsp;&nbsp;&nbsp;</label>
+                                        <input type="text" name="lName" id="lName" required></p>
+                                        
+                                        <p><label for="email">Email: &nbsp;&nbsp;&nbsp;</label>
+                                        <input type="email" name="email" id="email" required></p>
+                                        
+                                        <p><label for="phone">Phone: &nbsp;&nbsp;&nbsp;</label>
+                                        <input type="tel" id="phone" name="phone" required></p>
+                                    </fieldset>
+                                    
+                                    <fieldset>
+                                        <legend>Donation Amount & Type</legend>
+
+                                        <p><label for="amount">Donation Amount in Dollars: &nbsp;&nbsp;&nbsp;</label>
+                                        <input type="amount" name="amount" id="amount" required></p>
+                                        <p>Donation Type:
+                                            <label for="single"><input type="radio" name="interest" id="single" value="SingleDonation">Single Donation</label>
+                                            
+                                            <label for="monthly"><input type="radio" name="interest" id="monthly" value="MonthlyDonation">Monthly Donation</label>
+                                        </p>
+                                        
+                                    </fieldset>
+                                    
+                                    <fieldset>
+                                        <legend>Comments and Questions</legend>
+                                        <p><label for="questions"> Questions?</label></p>
+                                        <textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+                                        
+                                        <p><button><input type="submit" id="submit" value ="Submit" class="btn" onclick="thank_you()"></button></p>
+                                    </fieldset>
+                                    
+                                </form>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="content-box no-shadow bg-yellow">
+                    <h2>Sponsor An Animal</h2>
+                    <p>Rather than adopt an animal, become an animal's sponsor and ensure it's well cared for!</p>
+                    <button onclick="show_hide_Sponsor()">Show/Hide Form</button>
+
+                    <div id="Sponsor" class="display-hidden">
+                        
+                        <div class="row">
+
+                            <div class="column image-column">
+                                <img class="donation-image" src="images/donations_image_2.PNG" alt="Cat Picture" width="300" height="300">
+                            </div>
+
+                            <div class="column content-column">
+                                
+                                <form class="form-grid">
+                                
+                                    <fieldset>
+                                        <legend>Sponsor Information</legend>
+                                        <p><label for="fName">First Name: &nbsp;&nbsp;&nbsp;</label>
+                                        <input type="text" name="fName" id="fName" required></p>
+
+                                        <p><label for="lName">Last Name: &nbsp;&nbsp;&nbsp;</label>
+                                        <input type="text" name="lName" id="lName" required></p>
+                                        
+                                        <p><label for="email">Email: &nbsp;&nbsp;&nbsp;</label>
+                                        <input type="email" name="email" id="email" required></p>
+                                        
+                                        <p><label for="phone">Phone: &nbsp;&nbsp;&nbsp;</label>
+                                        <input type="tel" id="phone" name="phone" required></p>
+                                    </fieldset>
+                                    
+                                    <fieldset>
+                                        <legend>Sponsor Animal Type</legend>
+                                        <p>Animal Type:
+                                            <select name="animal-type" id="animal-type">
+                                                <option value="dog">Dog</option>
+                                                <option value="cat">Cat</option>
+                                                <option value="rabbit">Rabbit</option>
+                                                <option value="hampster">Hampster</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                        </p>
+                                        
+                                    </fieldset>
+                                    
+                                    <fieldset>
+                                        <legend>Comments and Questions</legend>
+                                        <p><label for="questions"> Questions?</label></p>
+                                        <textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+                                        
+                                        <p><button><input type="submit" id="submit" value ="Submit" class="btn" onclick="thank_you()"></button></p>
+                                    </fieldset>
+                                    
+                                </form>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="content-box no-shadow bg-lavender">
+                    <h2>Host A Fundraiser</h2>
+                    <p>If you or your company have a large location available, host a fundraiser!</p>
+                    <button onclick="show_hide_Host()">Show/Hide Form</button>
+
+                    <div id="Host" class="display-hidden">
+
+                        <div class="row">
+
+                            <div class="column image-column">
+                                <img class="donation-image" src="images/donations_image_3.PNG" alt="Fundraiser Picture" width="300" height="300">
+                            </div>
+
+                            <div class="column content-column">
+
+                                <form class="form-grid">
+                                
+                                    <fieldset>
+                                        <legend>Host Information</legend>
+                                        <p><label for="fName">First Name: &nbsp;&nbsp;&nbsp;</label>
+                                        <input type="text" name="fName" id="fName" required></p>
+
+                                        <p><label for="lName">Last Name: &nbsp;&nbsp;&nbsp;</label>
+                                        <input type="text" name="lName" id="lName" required></p>
+                                        
+                                        <p><label for="email">Email: &nbsp;&nbsp;&nbsp;</label>
+                                        <input type="email" name="email" id="email" required></p>
+                                        
+                                        <p><label for="phone">Phone: &nbsp;&nbsp;&nbsp;</label>
+                                        <input type="tel" id="phone" name="phone" required></p>
+                                        
+                                    </fieldset>
+                                    
+                                    <fieldset>
+                                        <legend>Location Information</legend>
+
+                                        <p><label for="cName">Company Name (If Applicable): &nbsp;&nbsp;&nbsp;</label>
+                                        <input type="cName" name="cName" id="cName"></p>
+                                        
+                                        <p><label for="address">Address: &nbsp;&nbsp;&nbsp;</label>
+                                        <input type="address" name="address" id="address" required></p>
+
+                                        <p><label for="startDate">Fundraiser Start Date &nbsp;&nbsp;&nbsp;</label>
+                                        <input type="date" id="startDate" name="startDate" required></p>
+
+                                        <p><label for="endDate">Fundraiser End Date &nbsp;&nbsp;&nbsp;</label>
+                                        <input type="date" id="endDate" name="endDate" required></p>
+                                        
+                                    </fieldset>
+                                    
+                                    <fieldset>
+                                        <legend>Comments and Questions</legend>
+                                        <p><label for="questions"> Questions?</label></p>
+                                        <textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+                                        
+                                        <p><button><input type="submit" id="submit" value ="Submit" class="btn" onclick="thank_you()"></button></p>
+                                    </fieldset>
+                                    
+                                </form>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+			</main>
+
+			<footer>
+			  <div class="footer-container">
+				<!-- <h2> Follow Our Social Media!</h2>
+				<div class="social-media-list">
+				  <ul class="list-inline">
+					<li class="list-inline-item"><a href="https://www.facebook.com/" target="_blank"><img
+						  src="images/facebook-icon.png" alt="Facebook Icon" width="50" height="50"></a></li>
+					<li class="list-inline-item"><a href="https://www.twitter.com/" target="_blank"><img
+						  src="images/twitter-icon.png" alt="Twitter Icon" width="50" height="50"></a></li>
+					<li class="list-inline-item"><a href="https://www.instagram.com/" target="_blank"><img
+						  src="images/instagram-icon.png" alt="Instagram Icon" width="50" height="50"></a></li>
+					<li class="list-inline-item"><a href="https://www.tiktok.com/" target="_blank"><img
+						  src="images/tiktok-icon.png" alt="Tiktok Icon" width="50" height="50"></a></li>
+				  </ul>
+				</div> -->
+				<p>&copy; 2023 Iron County Humane Animal Shelter. All Rights Reserved.</p>
+                <p>Page Design By: <a href="michael-portfolio.html">Michael Hoff</a></p>
+			  </div>
+			</footer>
+			
+		</div>
+	  
+	  
+		<!-- List Of Scripts -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="scripts/script.js"></script>
+	</body>
+</html>
