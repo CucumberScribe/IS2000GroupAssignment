@@ -477,7 +477,6 @@ body {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   margin-bottom: 30px;
 }
 
 /* Logo in mobile header */
@@ -488,7 +487,7 @@ body {
 
 /* Header for tablet and desktop devices */
 .tablet-desktop-header {
-   text-align: center;
+   text-align: left;
    margin-bottom: 30px;
 }
 
