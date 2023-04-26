@@ -218,6 +218,10 @@ aside {
    padding: 2%;
 }
 
+.contact-us h2:nth-child(odd) {
+   background-color: #e3dcf7;
+}
+
 .map-section {
    padding: 4%;
    border: solid 4px #220F2E;
