@@ -1,59 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>PJ Dadson - Iron County Humane Animal Shelter</title>
+    <title>PJ Dadson Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
     <!-- Custom Fonts -->
-    <!-- Font should be used for the "Overview portion of the main in index.html" -->
-    <!-- Feel free to use it wherever you want though. -->
     <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192x192.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
+
 <body>
-    <header class="floating-headerpj">
-        <h1>PJ Dadson</h1>
-        <nav>
-            <ul>
-                <li><a href="#details">Details</a></li>
-                <li><a href="#aboutme">About Me</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="details">
-        <img src="images/PJ-DadsonPortrait.jpg" alt="PJ Dadson Portrait">
-        <h2>Details</h2>
-        <p>Name: PJ Dadson</p>
-        <p>Age: 22</p>
-        <p>School: Southern Utah University</p>
-        <p>Major: Cybersecurity</p>
-        <p>One year experience in Information Technology (I.T) sector, working for Lenovo.</p>
-    </section>
-    <section id="aboutme">
-        <h2>About Me</h2>
-        <p> My name is Peter Dadson Jr, but I much prefer to be called PJ. I am an Australian that has come to the United States to pursue my basketball endeavors, and also study and hopefully earn a bachelors degree. I am currently a junior academically (In my 3rd year of studies), and I am majoring in cyber security. Once graduated, I intend to pursue a professional career in basketball. After I have retired from playing sports, I intend to work in the cyber security industry. I would prefer to work in the private sector, rather than for the government period while in college, I have picked up a part-time job at the Iron County Humane Animal Shelter. I have always had a passion for animals, so saving the lives of various pets, and finding them a loving home has always been a pleasant experience for me!</p>
-    </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: peterdadsonjr@outlook.com</p>
-        <p>Phone: US: +1 623-640-9810                 AUS: +61 415-821-105</p>
-        <p>GitHub: <a href="https://github.com/pj-dadson" target="_blank">https://github.com/pj-dadson</a></p>
-    </section>
-    <footer>
-        <div class="footer-container">
-            <h2> Follow Me On Social Media!</h2>
-            <div class="social-media-list">
-                <ul class="list-inline">
-                    <li class="list-inline-item"><a href="https://www.facebook.com/pj.dadson.1" target="_blank"><img
-                                src="images/facebook-icon.png" alt="Facebook Icon" width="50" height="50"></a></li>
-                    <li class="list-inline-item"><a href="https://www.instagram.com/peterdadsonjr" target="_blank"><img
-                                src="images/instagram-icon.png" alt="Instagram Icon" width="50" height="50"></a></li>
+    <div id="PJPortfolioContainer">
+
+        <header class="mobile-header">
+            <div class="grid-col2">
+                <a href="index.html">
+                    <h2>Iron County Humane Animal Shelter</h2>
+                </a>
+                <img src="images/AnimalShelterLogo.png" alt="Iron County Humane Animal Shelter Logo">
+            </div>
+        </header>
+
+        <header class="tablet-desktop-header">
+            <a href="index.html"><img src="images/AnimalShelterLogoWithText.png"
+                    alt="Iron County Humane Animal Shelter Logo"></a>
+        </header>
+       
+        <nav class="navbar navbar-expand-sm navbar-dark nav-bg">
+
+            <!-- Hamburger menu icon -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="care-policy.html">Care Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="stories.html">Stories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="adoptions.html">Adoptions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="donations.html">Donations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
                 </ul>
             </div>
-           <p>Created by PJ Dadson</p>
-        </div>
-    </footer>
-</body>
-</html>
 
+        </nav>
+        <header class="pjbanner">
+            <h1 class="banner-title">PJ Dadson</h1>
+          </header>
+        <main class="main-container">
+            <div class="image-container">
+              <img src="images/PJportfoliopic.jpeg" alt="PJ Dadson Portrait" class="pjimage">
+            </div>
+            <div class="text-container">
+              <section id="details">
+                <h2>Details</h2>
+                <p>Name: PJ Dadson</p>
+                <p>Age: 22</p>
+                <p>School: Southern Utah University</p>
+                <p>Major: Cybersecurity</p>
+              </section>
+              <section id="aboutme">
+                <h2>About Me</h2>
+                <p> My name is Peter Dadson Jr, but I much prefer to be called PJ. I am an Australian that has come to the United States to pursue my basketball endeavors, and also study and hopefully earn a bachelors degree. I am currently a junior academically (In my 3rd year of studies), and I am majoring in cyber security. Once graduated, I intend to pursue a professional career in basketball. After I have retired from playing sports, I intend to work in the cyber security industry. I would prefer to work in the private sector, rather than for the government. While in college, I have picked up a part-time job at the Iron County Humane Animal Shelter. I have always had a passion for animals, so saving the lives of various pets and finding them a loving home has always been a pleasant experience for me!</p>
+              </section>
+              <section id="contact">
+                <h2>Contact Me</h2>
+                <p>Email: peterdadsonjr@outlook.com</p>
+                <p>Phone: +1 623-640-9810</p>
+                <p>GitHub: <a href="https://github.com/pj-dadson" target="_blank">https://github.com/pj-dadson</a></p>
+              </section>
+            </div>
+          </main>
+          
+          
+        <!-- Footer -->
+        <footer>
+            <div class="footer-container">
+                <h2> Follow Me On Social Media!</h2>
+                <div class="social-media-list">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="https://www.facebook.com/pj.dadson.1" target="_blank"><img
+                                    src="images/facebook-icon.png" alt="Facebook Icon" width="50" height="50"></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/peterdadsonjr" target="_blank"><img
+                                    src="images/instagram-icon.png" alt="Instagram Icon" width="50" height="50"></a></li>
+                    </ul>
+                </div>
+               <p>Website designed by PJ Dadson</p>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <!-- List Of Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

@@ -455,6 +455,108 @@ form {
    text-align: left;
 }
 
+/* Styling for PJ's Portfolio Page */
+body {
+   margin: 0;
+   padding: 0;
+}
+
+/* Set background color for body */
+body {
+   background: linear-gradient(to right, #fff7db, #ffeaae);
+}
+
+/* Container for the entire page */
+#PJPortfolioContainer {
+   max-width: 100%;
+   margin:  auto;
+}
+
+/* Header for mobile devices */
+.mobile-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 30px;
+}
+
+/* Logo in mobile header */
+.mobile-header img {
+   max-width: 150px;
+   height: auto;
+}
+
+/* Header for tablet and desktop devices */
+.tablet-desktop-header {
+   text-align: center;
+   margin-bottom: 30px;
+}
+
+/* Logo in tablet and desktop header */
+.tablet-desktop-header img {
+   max-width: 250px;
+   height: auto;
+}
+ 
+ .pjbanner {
+   background-color: white; 
+   color: lavender; 
+   text-align: center; 
+   padding: 20px; 
+   border: 5px solid white;
+ }
+ 
+ .banner-title {
+   font-size: 100px; 
+   text-transform: uppercase; 
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   margin: 0; 
+   -webkit-text-stroke: 1px #000000;
+  color: lavender;
+ }
+ 
+
+/* Navigation bar */
+.navbar {
+   background-color: #000;
+}
+
+/* Navbar links */
+.navbar-nav.ml-auto {
+   text-align: center;
+}
+
+/* Navbar links - individual items */
+.nav-item {
+   margin: 0 15px;
+}
+
+/* Main content sections */
+.main-container {
+   display: flex;
+   background-image: linear-gradient(to right, #e6e6fa, #d8bfd8);
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+ 
+ .image-container {
+   flex: 0 0 auto;
+ }
+ 
+ .pjimage {
+   max-width: auto;
+   height: auto;
+   border: 10px solid white;
+
+ }
+ 
+ .text-container {
+   flex: 1;
+   border: 10px solid white;
+   padding: 10px;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+ 
+
 /* Styling for Andrew's Portfolio Page in mobile*/
 
 .andrew-portfolioh2 h2 {
